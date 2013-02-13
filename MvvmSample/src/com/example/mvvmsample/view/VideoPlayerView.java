@@ -105,6 +105,8 @@ public class VideoPlayerView extends Activity implements OnClickListener {
 			// Restore the instance state when
 			// 1. rotating the phone,
 			// 2. back from background when it's killed by OS
+
+			// This can be done in a base class for all view
 			if (savedInstanceState.containsKey(KEY_STATE_JSON)) {
 				try {
 					mVideoPlayerState = getMapper().readValue(
@@ -129,6 +131,8 @@ public class VideoPlayerView extends Activity implements OnClickListener {
 	// will clear it in background. If you rely on them, you will find they
 	// suddenly turned null when app came back from the background after a long
 	// time period.
+
+	// This can be done in a base class for all view
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
