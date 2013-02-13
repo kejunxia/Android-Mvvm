@@ -7,7 +7,7 @@ See http://ideaventure.blogspot.com.au/2013/02/android-mvvm-implementation.html 
 
 Model
 
--Models
+-Models<br/>
 for holding states and data. Models can be referenced and manipulated by View models.
 ViewModel State Model
 
